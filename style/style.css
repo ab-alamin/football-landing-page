@@ -1,0 +1,117 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    background-color: white;
+}
+/* ===============
+Banner Section CSS
+==================*/
+
+.banner-container{
+    background-color: #2D25A0;
+    height: 677px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.banner-left-content{
+    width: 75%;
+    padding-left: 116px;
+    padding-top: 207px;
+}
+.banner-left-content h1{
+    color: white;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    margin: 0px;
+    padding-bottom: 27px;
+}
+.banner-left-content a{
+    width: 168px;
+    height: 44px;
+    padding: 10px 24px 10px 24px;
+    background-color: #E02C6D;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+.banner-left-content i{
+ padding-left: 10px;
+}
+
+.banner-right-content {
+    width: 50%;
+    padding: 153px 120px 86px 40px;
+}
+.banner-right-content img{
+  width: 556px;
+  height: 438px;
+}
+/* =================
+Pluse hover animation
+====================*/
+
+@keyframes img-pulse {
+    50% {
+      transform:scale(0.9);
+    }
+    100% {
+      transform:scale(1.0);
+    }
+  }
+  .img-pulse:hover {
+      animation-name: img-pulse;
+      animation-duration: 0.9s;
+      animation-timing-function: ease-out;
+      animation-iteration-count:infinite;
+      animation-direction:reverse;
+    }
+    /* ================
+    article Section CSS
+ =================== */
+
+.blog-container{
+    padding-top: 70px;
+}
+.blog{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 150px;
+    margin-right: 145px;
+    column-gap: 30px;
+    row-gap: 27px;
+}
+.blog-content {
+    width: 330px;
+    height: 474px;
+    background-color: white;
+    box-shadow: 0px 0px 2px 1px gray;
+}
+.blog-content:hover{
+    box-shadow: 3px 3px 3px 3px gray;
+}
+.blog-content img{
+    width: 300px;
+    height: 256px;
+    padding: 15px 15px 10px 15px;
+}
+.blog-content h3{
+    padding-left: 15px;
+    font-weight: 700;
+    font-size: 28px;
+    color: #0f132b;
+    margin: 0;
+}
+.blog-content p{
+    padding: 15px;
+    margin: 0;
+    font-size: 16px;
+    color: #6C6C6C;
+    text-align: justify;
+    margin-top: -5px;
+}
+
